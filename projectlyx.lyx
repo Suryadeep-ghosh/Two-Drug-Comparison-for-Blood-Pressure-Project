@@ -1,0 +1,1405 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{titling}
+\fancyhf{}               % Clear fancy header/footer
+\fancyhead[L]{Presidency University}   % My name in Left footer
+\fancyhead[R]{\theauthor}
+\fancyfoot[C]{\thepage}  % Page number in Right footer
+\fancyfoot[R]{Instructor: AKG}
+
+\makeatletter
+\let\ps@plain\ps@fancy   % Plain page style = fancy page style
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 1.5cm
+\rightmargin 3.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+All the yellow parts in this template are comments and instructions for
+ you.
+ Don't need to worry about them in the final output.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+This is a template for your submission of assignment.
+ Just replace appropriate details in correct places and compile the document
+ (using CTRL+R).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Presidency University
+\begin_inset Newline newline
+\end_inset
+
+Data Analysis Project 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enter Course Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enter assignment number
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Suryadeep Ghosh
+\end_layout
+
+\begin_layout Part*
+Introduction:
+\end_layout
+
+\begin_layout Standard
+This project is basically about comparing two different types of drugs in
+ case of decreasing high blood pressure.
+ The two types of drugs considered here are (i) 
+\series bold
+Ayurved 
+\series default
+and (ii) 
+\series bold
+Alopathy
+\series default
+.We are also asked to see that if ayurved and alopath works at all in case
+ of hypertension or not.
+\end_layout
+
+\begin_layout Standard
+Only one aspect of blood pressure is considered here, viz.
+ 
+\series bold
+systolic standing
+\series default
+.
+ High blood pressure is also known as 
+\series bold
+Hypertension
+\series default
+.
+ A normal systolic blood pressure is 
+\series bold
+below 120
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Risk factors causing hypertensions are:-
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Obesity
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Lack of Physical Activity
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Sodium Intake
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Alcohol and drug use,Caffeine intake
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+In these cases, we can change the risk factors by stopping doing them.
+ But in some cases we cannot change the risk factors,
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Genetics
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Age
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Race
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Other deceases and conditions
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+So in these cases we use drugs to control blood pressure.
+\end_layout
+
+\begin_layout Standard
+Again,the authors of a 2012 study note that diabetes and hypertension often
+ occur together and may share some common causes.
+\end_layout
+
+\begin_layout Standard
+These include:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+obesity
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+inflammation
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+oxidative stress
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+insulin resistance
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+So often we see that diabetes and hypertension occurring at the same time.
+\end_layout
+
+\begin_layout Part*
+Exploratory Data Analysis:
+\end_layout
+
+\begin_layout Standard
+First we read the data file.After reading we use the 'head' function to see
+ that there are 
+\series bold
+7 variables
+\series default
+ in the dataset.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Age
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ , which is numeric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Sex
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\series default
+, which is factor.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Duration.of.hypertension..yrs.
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+, which is numeric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Duration.of.diabetes..yrs.
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ , which is numeric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Systolic.BP..standing...mmHg.Baseline
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ , which is numeric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Systolic.BP..standing...mmHg.Week8
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ , which is numeric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Quotes eld
+\end_inset
+
+Drug
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\series default
+, which is factor.
+\end_layout
+
+\begin_layout Itemize
+First we use the 
+\series bold
+'summary'
+\series default
+ function to calculate the 
+\series bold
+summary measures
+\series default
+ of the variables of the dataset such as mean,median,mode etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+B=read.table("C:
+\backslash
+
+\backslash
+Users
+\backslash
+
+\backslash
+LENOVO
+\backslash
+
+\backslash
+OneDrive
+\backslash
+
+\backslash
+Desktop
+\backslash
+
+\backslash
+BPSYScsv.csv",header=T,sep=",")
+\end_layout
+
+\begin_layout Plain Layout
+
+bp=na.omit(B)
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(bp)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Then we use the 
+\series bold
+'cor'
+\series default
+ function to calculate the 
+\series bold
+correlation
+\series default
+ between the 
+\series bold
+time period of hypertension
+\series default
+ and the 
+\series bold
+time period of diabetes
+\series default
+.
+ The value of correlation we get is 
+\series bold
+0.09558932
+\series default
+,i.e there is some positive correlation between hypertension and diabetes.
+\end_layout
+
+\begin_layout Itemize
+Then we need to see that 
+\series bold
+if ayurved is capable of curing hypertension
+\series default
+.So we first consider the readings of systolic blood pressure of those patients
+ who took ayurvedic drug.A 
+\series bold
+line diagram
+\series default
+ is done to see the trend of the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+B=read.table("C:
+\backslash
+
+\backslash
+Users
+\backslash
+
+\backslash
+LENOVO
+\backslash
+
+\backslash
+OneDrive
+\backslash
+
+\backslash
+Desktop
+\backslash
+
+\backslash
+BPSYScsv.csv",header=T,sep=",")
+\end_layout
+
+\begin_layout Plain Layout
+
+bp=na.omit(B)
+\end_layout
+
+\begin_layout Plain Layout
+
+ay=subset(bp,Drug=="Ay")
+\end_layout
+
+\begin_layout Plain Layout
+
+al=subset(bp,Drug=="Al")
+\end_layout
+
+\begin_layout Plain Layout
+
+before1=ay$Systolic.BP..standing...mmHg.Baseline
+\end_layout
+
+\begin_layout Plain Layout
+
+after1=ay$Systolic.BP..standing...mmHg.Week8
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(before1,type="b",pch=15,col="red",main="Blood pressure before and after
+ ayurved")
+\end_layout
+
+\begin_layout Plain Layout
+
+lines(after1,type="b",pch=15,col="blue",lty=2)
+\end_layout
+
+\begin_layout Plain Layout
+
+legend("topright",c("baseline","week 8"),fill=c("red","blue"))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the 
+\series bold
+boxplot
+\series default
+ of readings taken at the baseline and on week 8 and compare them.We see
+ that mean of readings of both cases 
+\series bold
+are not close at all
+\series default
+ (mean of readings at baseline=147.375 and mean of readings on week 8=130.625).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(before1,after1,main="Baseline and Week 8 of ayurved")
+\end_layout
+
+\begin_layout Plain Layout
+
+text(0.95366,130.5765,expression("Baseline"))
+\end_layout
+
+\begin_layout Plain Layout
+
+text(1.987617,166.2833,expression("Week 8")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Itemize
+Then we try to check 
+\series bold
+if alopath is capable of curing hypertension
+\series default
+.
+ So we first consider the readings of systolic blood pressure of those patients
+ who took alopathic drug.
+ A 
+\series bold
+line diagram
+\series default
+ is done to see the trend of the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+before2=al$Systolic.BP..standing...mmHg.Baseline
+\end_layout
+
+\begin_layout Plain Layout
+
+after2=al$Systolic.BP..standing...mmHg.Week8
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(before2,type="b",pch=15,col="red",main="Blood pressure before and after
+ alopathy")
+\end_layout
+
+\begin_layout Plain Layout
+
+lines(after2,type="b",pch=15,col="blue",lty=2)
+\end_layout
+
+\begin_layout Plain Layout
+
+legend("topleft",c("baseline","week 8"),fill=c("red","blue"))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the 
+\series bold
+boxplot
+\series default
+ of readings taken at the baseline and on week 8 and compare them.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(before2,after2,main="Baseline and week 8 of alopath")
+\end_layout
+
+\begin_layout Plain Layout
+
+text(0.95366,130.5765,expression("Baseline"))
+\end_layout
+
+\begin_layout Plain Layout
+
+text(1.987617,166.2833,expression("Week 8"))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the mean of readings of both cases 
+\series bold
+are not close at all
+\series default
+ (mean of readings at baseline= 147.6471 and mean of readings on week 8=134.9412).
+ We leave it for inferential data analysis.
+\end_layout
+
+\begin_layout Itemize
+Then to check that 
+\series bold
+which of the two types of drugs is most effective
+\series default
+ we take the difference of readings taken at baseline and readings taken
+ on week 8 in both cases of ayurved and alopath.
+\end_layout
+
+\begin_layout Standard
+We 
+\series bold
+boxplot
+\series default
+ them to see that the 
+\series bold
+mean of the differences in case of ayrved and alopath are close
+\series default
+ (mean for ayurved=16.7500 and mean for alopath=14.70588).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d1=(ay$Systolic.BP..standing...mmHg.Baseline-ay$Systolic.BP..standing...mmHg.Week8)
+\end_layout
+
+\begin_layout Plain Layout
+
+d2=(al$Systolic.BP..standing...mmHg.Baseline-al$Systolic.BP..standing...mmHg.Week8)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(d1,xlab="Performance of ayurved",ylim=c(-20,40),main=
+\begin_inset Quotes erd
+\end_inset
+
+Comparison of 
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(d2,xlab="Performance of alopathy",ylim=c(-20,40),main=
+\begin_inset Quotes erd
+\end_inset
+
+Ayurved and Alopath
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Part*
+Inferential Data Analysis:
+\end_layout
+
+\begin_layout Standard
+Based on the exploratory data analysis now we have to do the inferential
+ data analysis.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+First
+\series default
+, we need to infer if there exists any correlation between The duration
+ of hypertension and the duration of diabetes.Doing 
+\series bold
+t-test
+\series default
+(with level of significance 0.05) we see that the value the test statistic
+ does not fall in the critical region.
+ So we infer that the 
+\series bold
+null hypothesis is true
+\series default
+ i.e 
+\series bold
+the value of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (correlation coefficient) is 0
+\series default
+.
+ The 95% 
+\series bold
+confidence interval
+\series default
+ is 
+\series bold
+[-0.3439573,0.3439573]
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Then
+\series default
+, we need to infer about the difference of means of readings of baseline
+ and readings of week 8 in case of Ayurved.
+ Using The function 
+\series bold
+'t.test'
+\series default
+ (with level of significance 0.05),we take the 
+\series bold
+null hypothesis to be that differences of two means is equal to 0
+\series default
+ and 
+\series bold
+alternative hypothesis to be that the first mean is greater then second
+ one
+\series default
+.
+ After testing we see that the 
+\series bold
+p-value
+\series default
+ of the test is 
+\series bold
+0.0001258
+\series default
+ which is 
+\series bold
+< 0.05
+\series default
+.
+ So we infer that 
+\series bold
+mean of readings of baseline is greater than mean of readings of week 8
+\series default
+ i.e the 
+\series bold
+alternative hypothesis is true
+\series default
+.The 95% 
+\series bold
+confidence interval
+\series default
+ is 
+\series bold
+[9.901547,
+\begin_inset Formula $\infty$
+\end_inset
+
+)
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Then,
+\series default
+ we need to infer about the difference of means of readings of baseline
+ and readings of week 8 in case of Alopath.
+ Using The function 
+\series bold
+'t.test'
+\series default
+ (with level of significance 0.05),we take the 
+\series bold
+null hypothesis to be that differences of two means is equal to 0
+\series default
+ and 
+\series bold
+alternative hypothesis to be that the first mean is greater then second
+ one
+\series default
+.
+ After testing we see that the 
+\series bold
+p-value
+\series default
+ of the test is 
+\series bold
+0.003114
+\series default
+ which is 
+\series bold
+< 0.05
+\series default
+.
+ So we infer that 
+\series bold
+mean of readings of baseline is greater than mean of readings of week 8
+\series default
+ i.e the 
+\series bold
+alternative hypothesis is true
+\series default
+.The 95% 
+\series bold
+confidence interval
+\series default
+ is 
+\series bold
+[6.199885,
+\begin_inset Formula $\infty$
+\end_inset
+
+)
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Then,
+\series default
+ we need to infer about the difference of means of differences of reading
+ taken at baseline and on week 8 in case of both Ayurved and Alopath.Using
+ the 
+\series bold
+'t.test'
+\series default
+ (with level of significance 0.05), we take the 
+\series bold
+null hypothesis to be that difference of two means is equal to 0
+\series default
+ and 
+\series bold
+alternative hypothesis to be that they are not equal
+\series default
+.
+ After testing we see that the 
+\series bold
+p-value
+\series default
+ of the test is 
+\series bold
+0.6885
+\series default
+ which is 
+\series bold
+> 0.05
+\series default
+.
+ So we infer that 
+\series bold
+the value of means are same
+\series default
+ i.e the 
+\series bold
+null hypothesis is true
+\series default
+.The 95% 
+\series bold
+confidence interval
+\series default
+ is 
+\series bold
+[-8.257207,12.345442]
+\series default
+.
+\end_layout
+
+\begin_layout Part*
+Conclusion and Discussion:
+\end_layout
+
+\begin_layout Standard
+Based on the both exploratory and inferential analysis,
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+We see in the light of given data that diabetes does not cause hypertension
+ as there is no statistically significant correlation among duration of
+ diabetes and duration of hypertension.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+In the light of given data we conclude that Ayurvedic drug cures hypertension
+ as mean of readings taken before using the drug is significantly larger
+ than mean of readings taken after using the drug for 8 weeks.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+In the light of given data we conclude that Alopathic drug also cures hypertensi
+on as mean of readings taken before using the drug is significantly larger
+ than mean of readings taken after using the drug for 8 weeks.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+In the light of given data we conclude that both Ayurvedic and Alopathic
+ drug work equally good in case of curing hypertension as difference of
+ means of differences of reading taken at baseline and on week 8 in caes
+ of both Ayurved and Alopath is statistically insignificant.
+\end_layout
+
+\begin_layout Description
+So we conclude that 
+\series bold
+Ayurvedic and Alopathic drugs both can be used to cure hypertension
+\series default
+.
+\end_layout
+
+\begin_layout Part*
+Appendix:
+\end_layout
+
+\begin_layout Section*
+R codes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<eval=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+B=read.table("C:
+\backslash
+
+\backslash
+Users
+\backslash
+
+\backslash
+LENOVO
+\backslash
+
+\backslash
+OneDrive
+\backslash
+
+\backslash
+Desktop
+\backslash
+
+\backslash
+BPSYScsv.csv",header=T,sep=",")
+\end_layout
+
+\begin_layout Plain Layout
+
+bp=na.omit(B)
+\end_layout
+
+\begin_layout Plain Layout
+
+head(bp)
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(bp)
+\end_layout
+
+\begin_layout Plain Layout
+
+ay=subset(bp,Drug=="Ay")
+\end_layout
+
+\begin_layout Plain Layout
+
+al=subset(bp,Drug=="Al")
+\end_layout
+
+\begin_layout Plain Layout
+
+bl=bp$Duration.of.hypertension..yrs.
+\end_layout
+
+\begin_layout Plain Layout
+
+db=bp$Duration.of.diabetes..yrs.
+\end_layout
+
+\begin_layout Plain Layout
+
+cor(bl,db)
+\end_layout
+
+\begin_layout Plain Layout
+
+t=(r*sqrt(33-2))/(sqrt(1-r^2))
+\end_layout
+
+\begin_layout Plain Layout
+
+(t<=qt(0.025,31))&&(t>=qt(0.975,31))
+\end_layout
+
+\begin_layout Plain Layout
+
+u=qt(0.975,31)
+\end_layout
+
+\begin_layout Plain Layout
+
+a=(u^2)/31
+\end_layout
+
+\begin_layout Plain Layout
+
+sqrt(a/(a+1))
+\end_layout
+
+\begin_layout Plain Layout
+
+before1=ay$Systolic.BP..standing...mmHg.Baseline
+\end_layout
+
+\begin_layout Plain Layout
+
+after1=ay$Systolic.BP..standing...mmHg.Week8
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(before1,type="b",pch=15,col="red",main="Blood pressure before and after
+ ayurved")
+\end_layout
+
+\begin_layout Plain Layout
+
+lines(after1,type="b",pch=15,col="blue",lty=2)
+\end_layout
+
+\begin_layout Plain Layout
+
+legend("topright",c("baseline","week 8"),fill=c("red","blue"))
+\end_layout
+
+\begin_layout Plain Layout
+
+before2=al$Systolic.BP..standing...mmHg.Baseline
+\end_layout
+
+\begin_layout Plain Layout
+
+after2=al$Systolic.BP..standing...mmHg.Week8
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(before2,type="b",pch=15,col="red",main="Blood pressure before and after
+ alopathy")
+\end_layout
+
+\begin_layout Plain Layout
+
+lines(after2,type="b",pch=15,col="blue",lty=2)
+\end_layout
+
+\begin_layout Plain Layout
+
+legend("topleft",c("baseline","week 8"),fill=c("red","blue"))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(before1,after1,xlab="Baseline and Week 8 of ayurved")
+\end_layout
+
+\begin_layout Plain Layout
+
+text(0.95366,130.5765,expression("Baseline"))
+\end_layout
+
+\begin_layout Plain Layout
+
+text(1.987617,166.2833,expression("Week 8"))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(before2,after2,xlab="Baseline and week 8 of alopath")
+\end_layout
+
+\begin_layout Plain Layout
+
+text(0.95366,130.5765,expression("Baseline"))
+\end_layout
+
+\begin_layout Plain Layout
+
+text(1.987617,166.2833,expression("Week 8"))
+\end_layout
+
+\begin_layout Plain Layout
+
+d1=(ay$Systolic.BP..standing...mmHg.Baseline-ay$Systolic.BP..standing...mmHg.Week8)
+\end_layout
+
+\begin_layout Plain Layout
+
+d2=(al$Systolic.BP..standing...mmHg.Baseline-al$Systolic.BP..standing...mmHg.Week8)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(d1,xlab="Performance of ayurved",ylim=c(-20,40))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(d2,xlab="Performance of alopathy",ylim=c(-20,40))
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(before1,after1,var.equal=TRUE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(before2,after2,var.equal=TRUE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(d1,d2,var.equal=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Bibliography:
+\end_layout
+
+\begin_layout Standard
+To get some facts about boxplot,hypothesis testing and hypertension the
+ following references are followed:-
+\end_layout
+
+\begin_layout Enumerate
+Fundamentals of Mathematical Statistics by S.C Gupta, V.K.Kapoor.
+\end_layout
+
+\begin_layout Enumerate
+https://en.wikipedia.org/wiki/P-value.
+\end_layout
+
+\begin_layout Enumerate
+http://chemocare.com/chemotherapy/side-effects/blood-pressure-changes.aspx.
+\end_layout
+
+\begin_layout Part*
+Acknowledgment:
+\end_layout
+
+\begin_layout Standard
+I would like to thank Atanu Kumar Ghosh sir for giving me this project and
+ helping me learn about these interesting facts about hypertension and drugs
+ used to cure it.I have learned a lot about topics related to this topic
+ while doing this project.
+\end_layout
+
+\end_body
+\end_document
